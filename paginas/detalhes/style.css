@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+body {
+ 
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background:rgb(40, 43, 248);
+}
+
+.content-header {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 24px;
+  color: cadetblue;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: cadetblue;
+}
+
+nav ul button {
+  border: 1px solid cadetblue;
+  background: transparent;
+  padding: 8px 40px;
+  cursor: pointer;
+  margin-left: 30px;
+  color: cadetblue;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+nav ul button:hover {
+  transition: background, color 0.6s;
+  background: cadetblue;
+  color: white;
+}
+
+.content {
+  width: 70%;
+  height: 600px;
+  background-color: #ededed;
+  border-radius: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  padding: 20px;
+}
+
+.product-image {
+    width: 700px;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.product-image img {
+    width: 700px;
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+
+}
+
+.details h2 {
+    color: #474747;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+}
+
+.price {
+    color: yellowgreen !important;
+    margin-bottom: 30px;
+}
+
+.details h2:first-child {
+    color: cadetblue;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.details p {
+    font-size: 24px;
+    width: 90%;
+    font-style: italic;   
+    color: #00000070;
+    text-align: left;
+    line-height: 40px;
+}
+
+.destaque {
+  color: cadetblue;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+
+.buy {
+  border: 1px solid cadetblue;
+  background: cadetblue;
+  padding: 8px 40px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 25px;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.buy:hover {
+  transition: background, color 0.2s;
+  background: yellowgreen;
+  color: white;
+}
+
+section .catalog {
+  width: 100vw;
+  padding: 100px;
+}
+
+
+.search-button:hover {
+  background: #dedede;
+  color: cadetblue;
+}
+
+.title-wrapper-catalog {
+  margin-top: 200px;
+  padding-bottom: 20px;
+}
+
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 30px;
+}
+
+section .card-item {
+  height: 400px;
+  background: #ededed;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item img {
+  width: 85%;
+  
+}
+
+.card-item h4 {
+  width: 90%;
+}
+
+.card-item p {
+  width: 90%;
+  font-style: italic;
+  color: #00000070;
+}
+
+.card-item button {
+  width: 90%;
+  padding: 15px 0px;
+  border: none;
+  background: cadetblue;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.card-item button:hover {
+  background: #dedede;
+  color: cadetblue;
+}
+
+
+footer {
+  width: 100%;
+  margin-top: 150px;
+}
+
+footer .main {
+  width: 100%;
+  height: 140px;
+  background: blue;
+  padding: 20px 10px 0px 10px;
+}
+
+.footer-links {
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content-footer {
+  
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.footer-company,
+.footer-rental,
+.footer-contact,
+.footer-social {
+  color: white;
+  height: 100%;
+  min-height: 100px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.main .footer-social img {
+  width: 155px;
+  filter: invert(1)
+}
+
+footer .last {
+  width: 100%;
+  height: 0px;
+  background: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

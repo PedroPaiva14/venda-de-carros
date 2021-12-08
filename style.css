@@ -1,7 +1,5 @@
-/* font importing */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* reseting css rules */
 * {
   margin: 0px;
   padding: 0px;
@@ -9,7 +7,6 @@
   outline: none;
   font-family: "Roboto", sans-serif;
 }
-
 
 html,
 body {
@@ -30,7 +27,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  
 }
 
 nav {
@@ -126,8 +122,6 @@ nav ul button:hover {
   transition: transform 0.4s;
 }
 
-/* Product Catalog */
-
 section .catalog {
   width: 100vw;
   padding: 100px;
@@ -204,6 +198,7 @@ section .card-item {
 
 .card-item img {
   width: 85%;
+  border-radius: 10px;
 }
 
 .card-item h4 {
@@ -234,8 +229,6 @@ section .card-item {
   background: #dedede;
   color: cadetblue;
 }
-
-/* About */
 
 .about {
   width: 100%;
@@ -269,6 +262,13 @@ section .card-item {
   border-radius: 8px;
 }
 
+.left img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
 .right {
   width: 65%;
   height: 100%;
@@ -293,10 +293,8 @@ section .card-item {
   color: rgba(0, 0, 0, 0.4);
 }
 
-/* Footer */
 footer {
   width: 100%;
-  height: 250px;
 }
 
 footer .main {
@@ -333,8 +331,8 @@ footer .main {
 }
 
 .main .footer-social img {
-  width: 32px;
-  height: 32px;
+  width: 155px;
+  filter: invert(1)
 }
 
 footer .last {
@@ -345,87 +343,4 @@ footer .last {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Responsive adjustments */
-
-@media (max-width: 576px) {
-  nav ul li {
-    display: none;
-  }
-
-  .header-block img {
-    width: 70%;
-    position: absolute;
-    right: 16%;
-    top: 30%;
-  }
-
-  .header-block .text {
-    position: absolute;
-    bottom: 10%;
-    left: 15;
-  }
-
-  section .filter-card {
-    width: 390px;
-    padding: 0px 10px;
-  }
-
-  .search-input {
-    max-width: 700px;
-    min-width: 240px;
-  }
-
-  .search-button {
-    max-width: 150px;
-    min-width: 80px;
-  }
-
-  .about {
-    margin-top: 100px;
-  }
-
-  .title-wrapper-about {
-    margin-bottom: 20px;
-  }
-  .about-content {
-    flex-direction: column;
-    height: 100%;
-  }
-  .left {
-    display: none;
-  }
-  .right {
-    width: 90%;
-  }
-
-  .right p {
-    width: 100%;
-    margin: 0px;
-    text-align: left;
-  }
-
-  .features {
-    height: 100%;
-  }
-
-  .feature-card-block {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer {
-    height: 100%;
-  }
-
-  footer .main {
-    height: 100%;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    padding-left: 10%;
-  }
 }

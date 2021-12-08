@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paginas </title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="../../scripts/obterParams.js"></script>
+  <script defer src="../../scripts/dados.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="content-header">
+      <nav>
+        <p class="brand"><a
+            href="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/index.html">Paiva<strong>Carros<a></strong>
+        </p>
+        <ul>
+          <li><a
+              href="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/index.html#catalog">Catalogo</a>
+          </li>
+          <li><a
+              href="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/index.html#about">Sobre nos</a>
+          </li>
+          <button data-js="login">Cadastre-se</button>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="product-image">
+      <img src="../../images/onix1.png" data-js="imagem" />
+    </div>
+    <div class="details">
+      <h2 data-js="carro">${carro}</h2>
+      <h2 class="price" data-js="preco">${preço}</h2>
+      <p>
+        <span class="destaque">Modelo:</span><span data-js="modelo">${modelo}</span><br>
+        <span class="destaque">Versão:</span><span data-js="versao">${versao}</span><br>
+        <span class="destaque">Ano:</span><span data-js="ano">${ano}</span><br>
+        <span class="destaque">Kilometragem:</span><span data-js="km">${km}</span><br>
+        <span class="destaque">Local:</span><span data-js="local">${Local}</span>
+      </p>
+      <button class="buy">Compre já</button>
+    </div>
+  </section>
+
+  <section style="margin-top: 90px">
+    <h2>Veja mais</h2>
+    <div class="card-wrapper">
+      <div class="card-item">
+        <img src="../../images/toro.jpg" alt="Car" />
+        <div class="card-content">
+          <h3>Toro</h3>
+          <p>
+            2.0 16V Turbo Diesel Ultra 4WD AT9
+          </p>
+          <button type="button" data-js="button"
+            data-link="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/paginas/detalhes/detalhes.html?carro=Toro&modelo=Fiat Toro preto&versao=2.0 16V Turbo Diesel Ultra 4WD AT9&ano=2021&km=26.493&local=Belo Horizonte - Funcionarios&preco=149.999&imagem=../../images/toro.jpg">Ver
+            Detalhes</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="../../images/ccxr.PNG" alt="Car" />
+        <div class="card-content">
+          <h3>CCXR Trevita</h3>
+          <p>
+            8.9 160V Super Turbo Diesel Ultra Mega Fast 16WD AT90
+          </p>
+          <button type="button" data-js="button"
+            data-link="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/paginas/detalhes/detalhes.html?carro=CCXR Trevita &modelo=Koenigsegg CCXR Trevita Prateado Blindadão Super Fast&versao=5.0 160V Super Turbo Diesel Ultra Mega Fast 12WD AT90&ano=2023&km=10.000&local=Contagem - Novo Riacho&preco=14.050.000,00&imagem=../../images/ccxr.PNG">Ver
+            Detalhes</button>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="../../images/corolla2.jpg" alt="Car" />
+        <div class="card-content">
+          <h3>Hb20</h3>
+          <p>
+            2.0 16V Turbo Diesel Ultra 4WD AT9
+          </p>
+          <button type="button" data-js="button"
+            data-link="file:///C:/Users/user/Documents/javascript/treinamento%202/Projeto%20integrador%203kkkkkk/paginas/detalhes/detalhes.html?carro=Hb20&modelo=Hb20 preto vermelho&versao=manual&ano=2016&km=80&local=Riacho dos Pedros&preco=30.000&imagem=../../images/hb21.jpg">Ver
+            Detalhes</button>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="main">
+      <div class="content-footer footer-links">
+        <div class="footer-company">
+          <h4>Compania</h4>
+          <h6>Sobre nos</h6>
+          <h6>Contactos</h6>
+        </div>
+        <div class="footer-rental">
+          <h4>Alugue</h4>
+          <h6>Carros</h6>
+          <h6>Motoristas</h6>
+          <h6>Ajuda</h6>
+        </div>
+        <div class="footer-social">
+          <h4>Segue nos</h4>
+          <div class="social-icons">
+            <img src="../../images/social.png" alt="social" />
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h4>Contatos</h4>
+          <h6>+55 31 912345678</h6>
+          <h6>contato@123deoliveira4.com.br</h6>
+          <h6>Nome da Rua, Belo Horizonte MG</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const linkButtons = document.querySelectorAll("[data-js=button]");
+
+    linkButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        window.location.href = btn.dataset.link;
+      });
+    });
+  </script>
+</body>
+
+</html>
